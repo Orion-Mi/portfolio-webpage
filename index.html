@@ -6,40 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>danielopio Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <nav id="navbar">
-        <h1>DANIEL OPIO</h1>
+        <h1><a href="#">DANIEL OPIO</a></h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Contact</a></li>
         </ul>
     </nav>
     <section id="welcome-section">
         <div class="text">
             <h1>Hello, I'm Daniel</h1>
-            <p>Welcome to my Porrtfolio Website</p>
+            <p>Welcome to my Portfolio Website</p>
         </div>
-        <img src="./images/daniel01.png" alt="danielopio">
+        <img src="./images/daniel01.png" alt="danielopio" class="img-show">
     </section>
-    <section id="projects">
+    <section id="projects" class="container">
         <h1>Projects</h1>
-        <div class="project-grid">
-            <a href="https://orion-mi.github.io/SurveyForm/">
-                <img src="./images/Survey form.png" alt="Survey Form">
+        <div class="project-tile">
+            <a href="https://codepen.io/Orion-Mi/pen/PoRrbYK">
+                <img src="./images/Tribute page.png" alt="Tribute Page">
+                <p>Tribute Page</p>
+            </a>
+            <a href="https://orion-mi.github.io/Technical-documentation/">
+                <img src="./images/Technical documentation.png" alt="Technical documentation.png">
+                <p>Technical Documentation</p>
+            </a>
+            <a href="https://orion-mi.github.io/SurveyForm/" >
+                <img src="./images/Survey form.png" alt="Survey Form" >
                 <p>Survey Form</p>
             </a>
             <a href="https://orion-mi.github.io/landing-page/">
                 <img src="./images/landing page.png" alt="landing-page">
                 <p>Landing Page</p>
             </a>
-            <a href="https://codepen.io/Orion-Mi/pen/PoRrbYK">
-                <img src="./images/Tribute page.png" alt="Tribute Page">
-                <p>Tribute Page</p>
-            </a>
-            <a href=""></a>
+           
+        </div>
+    </section>
+    <section id="profile" class="contact container">
+        <h1>Contact</h1>
+        <h2>We can have some <i class="fa fa-coffee">Coffee</i> together</h2>
+        <p>You can contact on the following platforms.</p>
+        <div class="contact-links">
+            <a href="https://github.com/Orion-Mi" id="profile-link" target="_blank"><i class="fa fa-github"><p>GitHub</p></i></a>
+            <a href="https://twitter.com/Opio_Daniel1" id="profile-link" target="_blank"><i class="fa fa-twitter"><p>Twitter</p></i></a>
+            <a href="https://web.facebook.com/daniel.opio.330" id="profile-link" target="_blank"><i class="fa fa-facebook"><p>Facebook</p></i></a>
+            <a href="https://codepen.io/Orion-Mi" id="profile-link" target="_blank"><i class="fa fa-codepen"><p>Codepen</p></i></a>
         </div>
     </section>
 </body>
+<footer>
+    <p>Copyright &copy; <a href="https://www.freecodecamp.org/Orion-Mi">danielopio</a></p>
+    <p>Created as part of <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freecodecamp.org</a> Certification.</p>
+</footer>
 </html>
